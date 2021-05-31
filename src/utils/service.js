@@ -21,7 +21,6 @@ function constructUrl(src, directives) {
 }
 
 function generateSrcSetString(srcSet, deliveryAddress) {
-    console.log(typeof srcSet, srcSet);
   return srcSet.reduce((result, { src, width, directives }) => {
     // Extract width directive and always apply it to the image as
     // its size has to match provided width descriptor.

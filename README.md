@@ -14,7 +14,7 @@ The only prerequisite to start using them is placing `ImageEngineProvider` somew
 
 ```vue
  <template>
-  <div id="app">
+  <div class="content">
     <ImageEngineProvider deliveryAddress="https://blazing-fast-pics.cdn.imgeng.in">
       <picture>
         <SourceComponent
@@ -168,6 +168,15 @@ srcSet?: [{
 }]
 ```
 
+`attributes` - List of additional attributes:
+
+```ts
+attributes?: [{
+  // regular attribute
+  alt: string
+  // ...
+}]
+```
 
 ### Source
 `srcSet` - List of image variations for the image source set:

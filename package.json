@@ -1,0 +1,29 @@
+{
+  "name": "@imageengine/vue",
+  "version": "0.1.0",
+  "description": "Vue components for seamless integration with ImageEngine",
+  "private": true,
+  "scripts": {
+    "test": "imageengine vue"
+  },
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "vue": "^2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imgeng/imageengine-vue.git"
+  },
+  "keywords": [
+    "vue",
+    "image cdn"
+  ],
+  "author": "Luka Bjelica | https://github.com/luksha6",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imgeng/imageengine-vue/issues"
+  },
+  "homepage": "https://github.com/imgeng/imageengine-vue#readme"
+}

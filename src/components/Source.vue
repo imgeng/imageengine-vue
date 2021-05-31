@@ -1,5 +1,5 @@
 <template>
-  <source :srcSet="srcSetString" :media="media" />
+  <source :srcSet="srcSetString" :media="media" v-bind="attributes" />
 </template>
 
 <script>
@@ -14,6 +14,9 @@ export default {
     media: {
       type: String,
       required: true,
+    },
+    attributes: {
+      type: Object,
     },
   },
   computed: {

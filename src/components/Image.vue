@@ -2,6 +2,7 @@
   <img
     :src="directives ? srcString : imageUrl"
     :srcSet="srcSet ? srcSetString : false"
+    v-bind="attributes"
   />
 </template>
 
@@ -18,6 +19,9 @@ export default {
       type: Object,
     },
     srcSet: {
+      type: Object,
+    },
+    attributes: {
       type: Object,
     },
   },

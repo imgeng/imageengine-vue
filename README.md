@@ -96,8 +96,9 @@ export default {
   },
 };
 </script>
+```
 
-[Demo app on CodeSandbox]
+[Demo app on CodeSandbox] - soon
 
 ## Component props reference
 

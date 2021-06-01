@@ -4,13 +4,15 @@
   "description": "Vue components for seamless integration with ImageEngine",
   "private": true,
   "scripts": {
-    "test": "imageengine vue"
+    "build": "vue-cli-service build --target lib --name imageengineVue ./src/main.js"
   },
   "dependencies": {
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "vue": "^2.0"
+    "vue": "^2.0",
+    "@vue/cli-service": "~4.5.0",
+    "vue-template-compiler": "^2.6.11"
   },
   "repository": {
     "type": "git",
@@ -25,5 +27,15 @@
   "bugs": {
     "url": "https://github.com/imgeng/imageengine-vue/issues"
   },
-  "homepage": "https://github.com/imgeng/imageengine-vue#readme"
+  "homepage": "https://github.com/imgeng/imageengine-vue#readme",
+  "attributes": {
+      "main": "./dist/imageengineVue.common.js",
+      "files": [
+          "dist/*",
+          "src/*",
+          "public/*",
+          "*.json",
+          "*.js"
+      ]
+  }
 }

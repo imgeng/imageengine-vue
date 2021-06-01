@@ -5,7 +5,7 @@
 <script>
 import { generateSrcSetString } from "../utils/service";
 export default {
-  inject: ["deliveryAddress"],
+  inject: ["deliveryAddress", "stripFromSrc"],
   props: {
     srcSet: {
       type: Array,
@@ -21,7 +21,15 @@ export default {
   },
   computed: {
     srcSetString() {
-      return generateSrcSetString(this.srcSet, this.deliveryAddress);
+      return generateSrcSetString(
+        this.stripFromSrc
+          ? this.srcSet.map((image) => ({
+              ...image,
+              src: image.src.replace(this.stripFromSrc, ""),
+            }))
+          : this.srcSet,
+        this.deliveryAddress
+      );
     },
   },
 };

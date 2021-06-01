@@ -19,13 +19,13 @@ export default {
       type: Object,
     },
     srcSet: {
-      type: Object,
+      type: Array,
     },
     attributes: {
       type: Object,
     },
   },
-  inject: ["deliveryAddress"],
+  inject: ["deliveryAddress", "stripFromSrc"],
   computed: {
     srcString() {
       return constructUrl(this.imageUrl, this.directives);
@@ -34,7 +34,10 @@ export default {
       return generateSrcSetString(this.srcSet, this.deliveryAddress);
     },
     imageUrl() {
-      return this.deliveryAddress + this.src;
+      return (
+        this.deliveryAddress +
+        (this.stripFromSrc ? this.src.replace(this.stripFromSrc, "") : this.src)
+      );
     },
     imageExtension() {
       const ieSplit = this.src.split(".").slice(-1);

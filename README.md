@@ -102,6 +102,13 @@ export default {
 
 ## Component props reference
 
+### ImageEngineProvider
+`deliveryAddress` - [ImageEngine Delivery Address](https://support.imageengine.io/hc/en-us/articles/360059238371-Quick-Start):
+
+`stripFromSrc` - Strip away a portion of a source string in all ImageEngine's components. Particularly useful if your images are coming from a headless CMS and you need to erase something in received URL path (origin, for example):
+
+
+
 ### Image
 `src` - Relative path to the image:
 
@@ -177,6 +184,7 @@ attributes?: [{
   // ...
 }]
 ```
+
 
 ### Source
 `srcSet` - List of image variations for the image source set:

@@ -2,13 +2,14 @@
   <source :srcSet="srcSetString" :media="media" v-bind="attributes" />
 </template>
 
-<script>
+<script lang="ts">
+import { TSrcSet } from "../environment/types";
 import { generateSrcSetString } from "../utils/service";
 export default {
   inject: ["deliveryAddress", "stripFromSrc"],
   props: {
     srcSet: {
-      type: Array,
+      type: Array as () => TSrcSet,
       required: true,
     },
     media: {
@@ -20,7 +21,7 @@ export default {
     },
   },
   computed: {
-    srcSetString() {
+    srcSetString(): String {
       return generateSrcSetString(
         this.stripFromSrc
           ? this.srcSet.map((image) => ({

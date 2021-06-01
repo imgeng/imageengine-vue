@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: {
     deliveryAddress: {
@@ -15,7 +15,7 @@ export default {
       type: String,
     },
   },
-  provide() {
+  provide(): Object {
     return {
       deliveryAddress: this.deliveryAddress,
       stripFromSrc: this.stripFromSrc,

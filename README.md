@@ -29,7 +29,7 @@ The only prerequisite to start using them is placing `ImageEngineProvider` somew
               directives: { compression: 0 },
             },
           ]"
-          media="(max-width: 950px)"/>
+          :attributes="{ media: '(max-width: 950px)' }"/>
         <SourceComponent
           :srcSet="[
             {
@@ -42,8 +42,8 @@ The only prerequisite to start using them is placing `ImageEngineProvider` somew
               directives: { compression: 0 },
             },
           ]"
-          media="(max-width: 950px)"
           :attributes="{
+            media: '(max-width: 950px)',
             id: 'testid',
             'data-test': 'test source attribute',
           }"/>
@@ -203,5 +203,14 @@ srcSet?: [{
   // Width descriptor.
   width: string
   directives?: TDirectives
+}]
+```
+
+`attributes` - List of additional attributes:
+
+```ts
+attributes?: [{
+  // regular attribute, ex. media: '(max-width: 950px)',
+  // ...
 }]
 ```

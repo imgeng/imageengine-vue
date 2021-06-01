@@ -1,5 +1,5 @@
 <template>
-  <source :srcSet="srcSetString" :media="media" v-bind="attributes" />
+  <source :srcSet="srcSetString" v-bind="attributes" />
 </template>
 
 <script lang="ts">
@@ -10,10 +10,6 @@ export default {
   props: {
     srcSet: {
       type: Array as () => TSrcSet,
-      required: true,
-    },
-    media: {
-      type: String,
       required: true,
     },
     attributes: {

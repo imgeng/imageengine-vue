@@ -105,8 +105,15 @@ export default {
 ### ImageEngineProvider
 `deliveryAddress` - [ImageEngine Delivery Address](https://support.imageengine.io/hc/en-us/articles/360059238371-Quick-Start):
 
+```ts
+deliveryAddress: string
+```
+
 `stripFromSrc` - Strip away a portion of a source string in all ImageEngine's components. Particularly useful if your images are coming from a headless CMS and you need to erase something in received URL path (origin, for example):
 
+```ts
+stripFromSrc?: string
+```
 
 
 ### Image

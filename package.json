@@ -2,7 +2,6 @@
   "name": "@imageengine/vue",
   "version": "0.1.0",
   "description": "Vue components for seamless integration with ImageEngine",
-  "private": true,
   "scripts": {
     "build": "vue-cli-service build --target lib --name imageengineVue ./src/main.ts"
   },
@@ -25,7 +24,8 @@
   },
   "keywords": [
     "vue",
-    "image cdn"
+    "image cdn",
+    "ImageEngine"
   ],
   "author": "Luka Bjelica | https://github.com/luksha6",
   "license": "MIT",

@@ -33,19 +33,17 @@
     "url": "https://github.com/imgeng/imageengine-vue/issues"
   },
   "eslintConfig": {
-  "extends": [
-    "@vue/typescript/recommended"
-   ]
+    "extends": [
+      "@vue/typescript/recommended"
+    ]
   },
   "homepage": "https://github.com/imgeng/imageengine-vue#readme",
-  "attributes": {
-    "main": "./dist/imageengineVue.common.js",
-    "files": [
-      "dist/*",
-      "src/*",
-      "public/*",
-      "*.json",
-      "*.js"
-    ]
-  }
+  "main": "./dist/imageengineVue.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ]
 }

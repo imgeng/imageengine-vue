@@ -1,6 +1,6 @@
 {
   "name": "@imageengine/vue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vue components for seamless integration with ImageEngine",
   "scripts": {
     "build": "vue-cli-service build --target lib --name imageengineVue ./src/main.ts"

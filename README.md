@@ -63,9 +63,7 @@ The only prerequisite to start using them is placing `ImageEngineProvider` somew
 </template>
 
 <script>
-import Image from "../../src/components/Image.vue";
-import Source from "../../src/components/Source.vue";
-import ImageEngineProvider from "../../src/components/ImageEngineProvider.vue";
+import {Image, Source, ImageEngineProvider} from "@imageengine/vue";
 
 export default {
   components: {
@@ -88,11 +86,12 @@ export default {
 </template>
 
 <script>
-import Image from "../../src/components/Image.vue";
+import {Image, ImageEngineProvider} from "@imageengine/vue";
 
 export default {
   components: {
     ImageComponent: Image,
+    ImageEngineProvider
   },
 };
 </script>

@@ -97,7 +97,7 @@ export default {
 </script>
 ```
 
-[Demo app on CodeSandbox] - soon
+[Demo app on CodeSandbox](https://codesandbox.io/s/charming-yonath-9j1cb)
 
 ## Component props reference
 
